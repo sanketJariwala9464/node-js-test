@@ -3,7 +3,6 @@ const OrderModel = require('../models/order');
 const SensibullService = require('../services/sensibull');
 
 const job = new CronJob('*/15 * * * * *', async function () {
-    console.log('You will see this message every 15 minutes');
     const orders = await OrderModel.findAll({
         where: { status: 'open' },
         attributes: ['order_id']
@@ -14,8 +13,6 @@ const job = new CronJob('*/15 * * * * *', async function () {
     const service = new SensibullService();
 
     const orderStatus = await service.getOrderStatus({ order_ids: orderIds });
-
-    console.log(orderStatus);
 
     if (orderStatus.status == 200 && orderStatus.data.success) {
         const orderStatusData = orderStatus.data.payload;

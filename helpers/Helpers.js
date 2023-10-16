@@ -3,11 +3,11 @@ const messages = require('../lang/en.json');
 module.exports = {
     getMessage: (key, array_value = []) => {
         try {
-            const message = messages[key];
+            let message = messages[key];
             if (key && array_value.length > 0) {
-                let response = '';
+                let response = message;
                 array_value.forEach((value, index) => {
-                    response = message.replace(`:${index}`, value);
+                    response = response.replace(new RegExp(`:${index}`, 'g'), value);
                 });
                 return response;
             } else {

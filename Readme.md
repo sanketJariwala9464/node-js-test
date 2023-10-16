@@ -21,7 +21,7 @@ SENSIBULL_API_URL=
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Install the Node packages.
 
 ```bash
 npm install

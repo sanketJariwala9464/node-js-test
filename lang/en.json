@@ -1,0 +1,33 @@
+{
+    "required" : ":0 is required.",
+    "numeric" : ":0 should be number only.",
+    "min" : ":0 should be greater than :1 characters.",
+    "max" : ":0 should not be greater than :1 characters.",
+
+    "insert" : ":0 inserted successfully.",
+    "fail_insert" : "There is an issue inserting :0. Please try again.",
+
+    "fetch" : ":0 details fetched successfully.",
+    "fail_fetch" : "There is an issue fetching :0 details. Please try again.",
+
+    "update" : ":0 updated successfully.",
+    "fail_update" : "There is an issue updating :0. Please try again.",
+
+    "delete" : ":0 deleted successfully.",
+    "fail_delete" : "There is an issue deleting :0. Please try again.",
+
+    "cancel" : ":0 cancelled successfully.",
+    "fail_cancel" : "There is an issue cancelling :0. Please try again.",
+
+    "status" : ":0 status updated successfully.",
+    "fail_status" : "There is an issue changing status of :0. Please try again.",
+
+    "general_fail" : "Oops! Something went wrong. Please try again.",
+
+    "fail_found" : "Failed to find :0. Please try again.",
+    "not_authorized" : "You are not authorized to :0.",
+    "already_available" : ":0 is already available.",
+    "no_record" : "No record found!",
+
+    "enum" : ":0 selected from only :1"
+}
